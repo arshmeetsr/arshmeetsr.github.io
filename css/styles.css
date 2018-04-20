@@ -1,0 +1,165 @@
+body {
+    color: #333;
+    font-family: 'Raleway', sans-serif;
+    cursor: default;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.fp-section {
+    z-index: 50;
+}
+
+.header {
+    position: fixed;
+    z-index: 100;
+    background: transparent;
+    top: 0;
+    height: 50px;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 30px;
+    left: 0;
+    right: 0;
+}
+
+.header-menu {
+    margin-left: auto;
+}   
+
+.header-menu li {
+    display: inline-block;
+    margin: 0 15px;
+    padding-bottom: 2px;
+}
+
+.header-menu li.active {
+    border-bottom: 2px solid #21d2a1;
+}
+
+.header-menu li a {
+    text-decoration: none;
+    padding: 15px 0;
+    font-weight: 500;
+}
+
+.content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.intro-text {
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.hash-tags {
+    margin-top: 70px;
+    width: 50%;
+    float: left;
+}
+
+.hash-tags .tag {
+    margin-right: 20px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.hash-tags .hash {
+    margin-right: 4px;
+    color: #21d2a1;
+}
+
+.circle {
+    position: absolute;
+    background: #21d2a1;
+    bottom: -150px;
+    height: 500px;
+    width: 500px;
+    right: -150px;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.underline {
+     border-bottom: 2px solid #21d2a1;
+     padding-bottom: 2px;
+}
+
+.links-to {
+    position: absolute;
+    bottom: 0;
+    padding: 20px 0;
+}
+
+.link {
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    position: relative;
+    cursor: pointer;
+}
+
+.link:hover:after {
+    content: ' ';
+    position: absolute;
+    top: 100%;
+    cursor: pointer;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #21d2a1;
+    margin-top: 2px;
+    
+}
+
+.heading {
+    font-size: 26px;
+    line-height: 30px;
+    border-bottom: 2px solid #21d2a1;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+.half-side {
+    width: 50%;
+    float: left;
+}
+
+.contact {
+    margin-bottom: 20px;
+    font-size: 20px;
+    display: block;
+}
+
+.contact i.fa {
+    margin-right: 5px;
+    color: #21d2a1;
+}
+
+.slide-content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.project-name {
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+    
+.project-description {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 15px;
+}

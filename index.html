@@ -1,10 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Web Enthusiast</title>
+    <link rel="shortcut icon" type="image/png" href="./images/favicon.png"/>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/full-page.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="./js/jquery.fullPage.min.js" type="text/javascript"></script>
 </head>
+
 <body>
-    <h1>Hello World</h1>
+    <header class="header">
+        <ul id="menu" class="header-menu">
+            <li data-menuanchor="about"><a href="#about">About</a></li>
+            <li data-menuanchor="work"><a href="#work">Work</a></li>
+            <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+    <div id="fullpage">
+        <div class="section" id="section1">
+            <div class="content">
+                <div class="intro-text">
+                    Hi,
+                    <br> I am Arshmeet Singh
+                    <br> a <span class="underline">Web Developer</span>.
+                </div>
+                <div class="hash-tags">
+                    <span class="tag"><span class="hash">#</span>Angular 2+</span>
+                    <span class="tag"><span class="hash">#</span>Express</span>
+                    <span class="tag"><span class="hash">#</span>Mongo</span>
+                    <span class="tag"><span class="hash">#</span>Reactjs</span>
+                    <span class="tag"><span class="hash">#</span>Redux</span>
+                    <span class="tag"><span class="hash">#</span>Javascript</span>
+                    <span class="tag"><span class="hash">#</span>Jquery</span>
+                    <span class="tag"><span class="hash">#</span>HTML</span>
+                    <span class="tag"><span class="hash">#</span>CSS</span>
+                    <span class="tag"><span class="hash">#</span>SASS</span>
+                </div>
+                <div class="circle"></div>
+                <div class="links-to">
+                    <a class="link" target="_blank" href="https://www.linkedin.com/in/arshmeetsr">LinkedIn</a>
+                    <a class="link" target="_blank" href="https://github.com/arshmeetsr">Github</a>
+                    <a class="link" target="_blank" href="https://stackoverflow.com/users/7091468/arshmeet">StackOverflow</a>
+                    <a class="link" target="_blank" href="https://codepen.io/Arshmeet/">Codepen</a>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section2">
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="half-side">
+                        <div class="project-name">Aecern</div>
+                        <div class="project-description">Built as a wrapper of google classrooms that enables teachers to assign assignments containing research, analyze, data capture activities to classrooms containing students. Students can collect data in the form images, audio, video, text in response.</div>
+                        <div class="project-tech">Angular 2, HTML, SASS, Bootstrap, PrimeNg</div>
+                    </div>
+                    <img src="./images/aecern.png" class="half-side" />
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="half-side">
+                        <div class="project-name">Cadence</div>
+                        <div class="project-description">Chat based web app that enables real time private or group chat. Users can text, share files, create groups chats, create a poll and whole lot.</div> 
+                        <div class="project-tech">Angular 4</div>
+                    </div>
+                    <img src="./images/cadence.png" class="half-side" />
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="slide-content">
+                    <div class="half-side">
+                        <div class="project-name">MedCircle</div>
+                        <div class="project-description">Web app that enables healthcare providers (HCPs) to connect and stay engaged with their followers. Patients, clients, family members and colleagues can all follow HCPs.</div> 
+                        <div class="project-tech">Express, JQuery</div>
+                    </div>
+                    <img src="./images/medcircle.png" class="half-side" />
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section3">
+            <div class="content">
+                <div class="half-side">
+                    <div class="heading">Find me on</div>
+                    <a class="contact" target="_blank" href="https://www.linkedin.com/in/arshmeetsr">
+                        <i class="fa fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a class="contact" target="_blank" href="https://github.com/arshmeetsr">
+                        <i class="fa fa-github"></i>
+                        <span>Github</span>
+                    </a>
+                    <a class="contact" target="_blank" href="https://stackoverflow.com/users/7091468/arshmeet">
+                        <i class="fa fa-stack-overflow"></i>
+                        <span>StackOverflow</span>
+                    </a>
+                    <a class="contact" target="_blank" href="https://codepen.io/Arshmeet/">
+                        <i class="fa fa-codepen"></i>
+                        <span>Codepen</span>
+                    </a>
+                    <a class="contact">
+                        <i class="fa fa-steam"></i>
+                        <span>Steam</span>
+                    </a>
+                </div>
+                <div class="half-side">
+                    <div class="heading">Get in touch</div>
+                    <div class="contact">
+                        <i class="fa fa-phone"></i>
+                        <span>9899562844</span>
+                    </div>
+                    <div class="contact">
+                        <i class="fa fa-envelope"></i>
+                        <span>arshmeetsr@gmail.com</span>
+                    </div>
+                </div>
+                <div class="circle"></div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#fullpage').fullpage({
+            sectionsColor: ['#D9FFF5', '#B9F5D8', '#e4eae4'],
+            anchors: ['about', 'work', 'contact'],
+            menu: '#menu',
+            scrollingSpeed: 1000
+        });
+    });
+
+</script>
